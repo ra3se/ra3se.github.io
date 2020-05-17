@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RA3SE on RA3.SE</title>
-    <link>http://ra3.se/</link>
+    <link>/</link>
     <description>Recent content in RA3SE on RA3.SE</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 15 May 2020 23:52:03 +0200</lastBuildDate>
     
-	<atom:link href="http://ra3.se/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Server Status</title>
-      <link>http://ra3.se/server-status/</link>
+      <link>/server-status/</link>
       <pubDate>Sat, 16 May 2020 22:19:36 +0200</pubDate>
       
-      <guid>http://ra3.se/server-status/</guid>
+      <guid>/server-status/</guid>
       <description> Status
 online
    Map
@@ -30,10 +30,10 @@ ra3map11
     
     <item>
       <title>Config</title>
-      <link>http://ra3.se/config/</link>
+      <link>/config/</link>
       <pubDate>Sat, 16 May 2020 11:02:42 +0200</pubDate>
       
-      <guid>http://ra3.se/config/</guid>
+      <guid>/config/</guid>
       <description>The configuration file To have configuration settings loaded at startup, create a file called autoexec.cfg and place it in your arena or baseq3 folder.
 When changing CVAR (dynamic variables) there are a couple of different set commands that can be used.
  set sets a cvar seta sets a cvar and flags it as archive sets sets a cvar and flags it as server info sett sets a cvar and flags it as tool setu sets a cvar and flags it as user info  Get inspired Back in the day ones Quake 3 configuration file was a closely guarded secret, today; we share .</description>
@@ -41,20 +41,20 @@ When changing CVAR (dynamic variables) there are a couple of different set comma
     
     <item>
       <title>Getting started</title>
-      <link>http://ra3.se/getting-started/</link>
+      <link>/getting-started/</link>
       <pubDate>Sat, 16 May 2020 11:02:24 +0200</pubDate>
       
-      <guid>http://ra3.se/getting-started/</guid>
+      <guid>/getting-started/</guid>
       <description>Pick your engine! The original game engine can present issues on modern operating systems, luckily for us id Software open sourced the engine on August 19, 2005 as they have with many of their prior engines. Since then the community have and are still updating the engine and make sure that it works for our modern computers.
 Keep in mind that you will still need pak0.pk3 from the original game.</description>
     </item>
     
     <item>
       <title>Common issues</title>
-      <link>http://ra3.se/common-issues/</link>
+      <link>/common-issues/</link>
       <pubDate>Fri, 15 May 2020 23:51:33 +0200</pubDate>
       
-      <guid>http://ra3.se/common-issues/</guid>
+      <guid>/common-issues/</guid>
       <description>Version missmatch Make sure you have arena loaded before attempting to join the server, alternatively start quake with the command line option +set fs_game arena.
 Set cl_allowDownload to 1 in order to download whatever assets might be missing in your local installation from the server.
 Experiencing lag Try the following in your configuration:

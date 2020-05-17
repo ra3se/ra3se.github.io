@@ -3,36 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://ra3.se/server-status/</loc>
+    <loc>/server-status/</loc>
     <lastmod>2020-05-16T22:19:36+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ra3.se/config/</loc>
+    <loc>/config/</loc>
     <lastmod>2020-05-16T11:02:42+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ra3.se/getting-started/</loc>
+    <loc>/getting-started/</loc>
     <lastmod>2020-05-16T11:02:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ra3.se/</loc>
+    <loc>/</loc>
     <lastmod>2020-05-15T23:52:03+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ra3.se/common-issues/</loc>
+    <loc>/common-issues/</loc>
     <lastmod>2020-05-15T23:51:33+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://ra3.se/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>http://ra3.se/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
