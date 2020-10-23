@@ -32,7 +32,7 @@ set r_customWidth  1920
 set r_customHeight 1080
 ```
 
-Some engine also support `set r_mode -2` that will use the desktop resolution
+Some engines also support `set r_mode -2` that will use the desktop resolution
 
 ## Mouse acceleration
 
