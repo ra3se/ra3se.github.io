@@ -1,0 +1,29 @@
+{
+  "baseURL": "/",
+  "languageCode": "en-us",
+  "title": "RA3.SE",
+  "menu": {
+    "main": [
+      {
+        "name": "Server status",
+        "url": "/server-status/",
+        "weight": -200
+      },
+      {
+        "name": "getting started",
+        "url": "/getting-started/",
+        "weight": -190
+      },
+      {
+        "name": "common issues",
+        "url": "/common-issues/",
+        "weight": -180
+      },
+      {
+        "name": "Config",
+        "url": "/config/",
+        "weight": -170
+      }
+    ]
+  }
+}

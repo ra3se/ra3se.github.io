@@ -1,0 +1,18 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>#RA3SE - {{ .Title }}</title>
+
+  <script src="https://kit.fontawesome.com/14c6a4523b.js" crossorigin="anonymous"></script>
+
+  {{ $options := (dict "includePaths" (slice "node_modules/bulma")) }}
+  {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Minify | resources.Fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+  <script type="text/javascript" src="/javascripts/websocket.js"></script>
+
+  {{- partial "templates.html" . -}}
+
+  {{- block "head" . }}{{- end }}
+</head>

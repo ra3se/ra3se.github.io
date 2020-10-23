@@ -1,0 +1,12 @@
+{
+  "name": "@ra3se/webapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "bulma": "^0.8.2"
+  }
+}
