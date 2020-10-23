@@ -32,6 +32,8 @@ set r_customWidth  1920
 set r_customHeight 1080
 ```
 
+Some engine also support `set r_mode -2` that will use the desktop resolution
+
 ## Mouse acceleration
 
 Some windows users are experiencing issue with mouse acceleration even after It's been turned off. [MarkC mouse acceleration fix](https://donewmouseaccel.blogspot.com/2010/03/markc-windows-7-mouse-acceleration-fix.html) could solved the issue.
