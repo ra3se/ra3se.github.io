@@ -1,8 +1,5 @@
-
-
-const ws = new WebSocket('ws://' + location.hostname + ':3031');
-
-document.addEventListener('DOMContentLoaded', function() {
+export const websocket = () => {
+  const ws = new WebSocket('ws://' + location.hostname + ':3031');
   const serverLogList = document.getElementById("serverLogList");
 
   ws.onmessage = function(event) {
@@ -25,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
           }
 
           if (['messageParts'].indexOf(key) > -1) {
-            message.data.message = message.data.messageParts.reduce(function(result, part) {
+            message.data.message = message.data.messageParts.reduce(function(_, part) {
               result += " " + prettyName(part);
             }, "");
           }
@@ -36,4 +33,4 @@ document.addEventListener('DOMContentLoaded', function() {
       serverLogList.appendChild(li);
     }
   }
-});
+}
