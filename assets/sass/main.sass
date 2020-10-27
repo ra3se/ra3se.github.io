@@ -1,0 +1,83 @@
+@charset "utf-8"
+
+@import "node_modules/bulma/sass/utilities/_all.sass"
+@import "node_modules/bulma/sass/base/_all.sass"
+@import "node_modules/bulma/sass/helpers/_all.sass"
+@import "node_modules/bulma/sass/grid/_all.sass"
+@import "node_modules/bulma/sass/elements/container.sass"
+@import "node_modules/bulma/sass/elements/table.sass"
+@import "node_modules/bulma/sass/elements/content.sass"
+@import "node_modules/bulma/sass/elements/box.sass"
+@import "node_modules/bulma/sass/elements/title.sass"
+@import "node_modules/bulma/sass/elements/image.sass"
+@import "node_modules/bulma/sass/elements/other.sass"
+@import "node_modules/bulma/sass/components/navbar.sass"
+@import "node_modules/bulma/sass/components/level.sass"
+
+@import "./variables.sass"
+@import "./intro.sass"
+@import "./navigation.sass"
+
+body
+  color: $white
+
+#background
+  width: 100%
+  height: 100%
+  z-index: -1
+  position: fixed
+  background: $blue url('/image/pattern.png') repeat
+  transform: rotate(-30deg)
+  top: -50%
+  left: -50%
+  width: 200%
+  height: 200%
+  min-width: 2000px
+
+#main, .footer
+  color: $white
+  background-color: $grey-darker
+  padding: 2em
+  position: relative
+  margin: 0 auto 1em
+  z-index: 2
+
+  h1, h2, h3, h4, h5, h6
+    color: $white-ter
+
+  strong
+    color: $white-ter
+
+  a
+    color: $orange
+    &:hover
+      color: $white-ter
+
+  table
+    @extend .table
+    thead th
+      color: $white-ter
+      border-color: $grey
+
+    td
+      border-color: $grey-dark
+
+    color: $white-bis
+    background-color: $grey-darker
+
+  pre, code
+    color: $green
+    background: $black-ter
+    font-family: $family-monospace
+
+  .box
+    background-color: $black-ter
+    color: $white-ter
+
+  .title
+    color: $white-ter
+
+
+.content
+  figure
+    margin: 0

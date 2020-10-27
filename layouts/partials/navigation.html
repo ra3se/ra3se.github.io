@@ -1,22 +1,40 @@
-<nav id="nav">
-  <ul class="links">
-    {{ $currentPage := . }}
-    {{ range .Site.Menus.main.ByWeight }}
-      {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-      {{ $active = or $active (eq .URL $currentPage.RelPermalink) }}
-      {{ $active = or $active (eq .Name $currentPage.Title) }}
-      {{ $active = or $active (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
-      {{ $active = or $active (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
-      <li class="{{ if $active }}active{{ end }}">
-        <a href="{{ .URL }}#nav">
-          <span>{{ .Name }}</span>
+<div class="navbar-offset"></div>
+
+<nav id="nav" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" href="/">
+        {{- partial "svg/logo-square.svg" . -}}
+        <span class="is-mobile" >&nbsp;ra3se</span>
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="main-nav">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="main-nav" class="navbar-menu">
+      <div class="navbar-start">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main.ByWeight }}
+          {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+          {{ $active = or $active (eq .URL $currentPage.RelPermalink) }}
+          {{ $active = or $active (eq .Name $currentPage.Title) }}
+          {{ $active = or $active (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
+          {{ $active = or $active (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
+          <a class="navbar-item {{ if $active }}is-active{{ end }}" href="{{ .URL }}#main" aria-label="{{ .Name }}">
+            {{ .Name }}
+          </a>
+        {{ end }}
+      </div>
+
+      <div class="navbar-end">
+        <a class="navbar-item is-icon" target="_blank" href="https://discord.com/invite/QgEuqhc">
+          {{- partial "svg/discord-brands.svg" . -}}
         </a>
-      </li>
-    {{ end }}
-  </ul>
-  <ul class="icons">
-    <li><a href="https://discord.com/invite/QgEuqhc">
-      <i class="fab fa-discord"></i>
-    </a></li>
-  </ul>
+      </div>
+    </div>
+  </div>
 </nav>

@@ -4,13 +4,14 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>#RA3SE - {{ .Title }}</title>
 
-  <script src="https://kit.fontawesome.com/14c6a4523b.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="/image/logo-square-800x800.png" />
 
   {{ $options := (dict "includePaths" (slice "node_modules/bulma")) }}
-  {{ $style := resources.Get "sass/main.scss" | resources.ToCSS $options | resources.Minify | resources.Fingerprint "sha512" }}
+  {{ $style := resources.Get "sass/main.sass" | resources.ToCSS $options | resources.Minify | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
 
-  <script type="text/javascript" src="/javascripts/websocket.js"></script>
+  {{ $built := resources.Get "js/main.js" | js.Build "main.js" }}
+  <script type="text/javascript" src="{{ $built.RelPermalink }}" defer></script>
 
   {{- partial "templates.html" . -}}
 
