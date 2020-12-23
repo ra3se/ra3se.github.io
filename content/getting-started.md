@@ -1,6 +1,6 @@
 ---
-title: "Getting started"
-date: 2020-05-16T11:02:24+02:00
+title: Getting started
+date: 2020-05-16 09:02:24 Z
 draft: false
 ---
 

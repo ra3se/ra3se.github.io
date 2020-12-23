@@ -1,6 +1,6 @@
 ---
-title: "RA3SE"
-date: 2020-05-15T23:52:03+02:00
+title: RA3SE
+date: 2020-05-15 21:52:03 Z
 draft: false
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Config"
-date: 2020-05-16T11:02:42+02:00
+title: Config
+date: 2020-05-16 09:02:42 Z
 draft: false
 ---
 
