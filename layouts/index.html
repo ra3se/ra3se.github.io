@@ -1,5 +1,11 @@
+{{ define "header" }}
+<div id="intro">
+  {{- partial "svg/logo.svg" . -}}
+</div>
+{{ end }}
+
 {{ define "main" }}
-  <div class="content is-medium">
-    {{- .Content -}}
-  </div>
+<div class="content is-medium">
+  {{- .Content -}}
+</div>
 {{ end }}

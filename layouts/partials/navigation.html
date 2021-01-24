@@ -5,7 +5,7 @@
     <div class="navbar-brand">
       <a class="navbar-item logo" href="/">
         {{- partial "svg/logo-square.svg" . -}}
-        <span class="is-mobile" >&nbsp;ra3se</span>
+        <span class="is-mobile">&nbsp;ra3se</span>
       </a>
 
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="main-nav">
@@ -19,14 +19,14 @@
       <div class="navbar-start">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main.ByWeight }}
-          {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-          {{ $active = or $active (eq .URL $currentPage.RelPermalink) }}
-          {{ $active = or $active (eq .Name $currentPage.Title) }}
-          {{ $active = or $active (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
-          {{ $active = or $active (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
-          <a class="navbar-item {{ if $active }}is-active{{ end }}" href="{{ .URL }}#main" aria-label="{{ .Name }}">
-            {{ .Name }}
-          </a>
+        {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+        {{ $active = or $active (eq .URL $currentPage.RelPermalink) }}
+        {{ $active = or $active (eq .Name $currentPage.Title) }}
+        {{ $active = or $active (and (eq .Name "Blog") (eq $currentPage.Section "post")) }}
+        {{ $active = or $active (and (eq .Name "Tags") (eq $currentPage.Section "tags")) }}
+        <a class="navbar-item {{ if $active }}is-active{{ end }}" href="{{ .URL }}" aria-label="{{ .Name }}">
+          {{ .Name }}
+        </a>
         {{ end }}
       </div>
 

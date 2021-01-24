@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "navigation.html" . -}}
+{{- partial "head.html" . -}}
 
-        {{- partial "header.html" . -}}
+<body>
+    {{- partial "navigation.html" . -}}
 
-        <div class="container">
-            <section id="main">
-                {{- block "main" . }}{{- end }}
-            </section>
-            {{- partial "footer.html" . -}}
-        </div>
-    </body>
+    {{- partial "header.html" . -}}
+
+    {{- block "header" . }}{{- end }}
+
+    <div class="container">
+        <section id="main">
+            {{- block "main" . }}{{- end }}
+        </section>
+        {{- partial "footer.html" . -}}
+    </div>
+</body>
+
 </html>
