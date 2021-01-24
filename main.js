@@ -1,6 +1,6 @@
 (() => {
-  // assets/js/websocket.js
-  const websocket = () => {
+  // ns-hugo:/home/runner/work/ra3se.github.io/ra3se.github.io/assets/js/websocket.js
+  var websocket = () => {
     const ws = new WebSocket("ws://" + location.hostname + ":3031");
     const serverLogList = document.getElementById("serverLogList");
     ws.onmessage = function(event) {
@@ -31,8 +31,8 @@
     };
   };
 
-  // assets/js/navigation.js
-  const navigation = () => {
+  // ns-hugo:/home/runner/work/ra3se.github.io/ra3se.github.io/assets/js/navigation.js
+  var navigation = () => {
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"), 0);
     if ($navbarBurgers.length > 0) {
       $navbarBurgers.forEach((el) => {
@@ -47,6 +47,6 @@
     }
   };
 
-  // main.js
+  // js/main.js
   document.addEventListener("DOMContentLoaded", () => [navigation, websocket].forEach((fn) => fn.apply(null)));
 })();
