@@ -1,6 +1,6 @@
 # ra3se.github.io
 
-The RA3SE commuity homepage
+The RA3SE community homepage
 
 ## Development
 
