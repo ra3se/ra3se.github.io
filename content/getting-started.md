@@ -22,7 +22,7 @@ Choose one of the following:
 
 Download the mod:
 
-- [Rocket Arena 3 v1.76](http://ra3.lorio.se/game/ra3176.zip)
+- [Rocket Arena 3 v1.76](https://www.ausgamers.com/files/process/14265/rocket-arena-3-v176-for-quake-3-maclinux)
 
 ### Optional
 
