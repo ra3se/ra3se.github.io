@@ -5,7 +5,7 @@ set cl_maxpackets 125 set cl_timeNudge -12 set rate 25000 set snaps 40 Wrong res
 When changing CVAR (dynamic variables) there are a couple of different set commands that can be used.
 set sets a cvar seta sets a cvar and flags it as archive sets sets a cvar and flags it as server info sett sets a cvar and flags it as tool setu sets a cvar and flags it as user info Get inspired Back in the day ones Quake 3 configuration file was a closely guarded secret, today; we share .</description></item><item><title>Getting started</title><link>/getting-started/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/getting-started/</guid><description>Pick your engine! The original game engine can present issues on modern operating systems, luckily for us id Software open sourced the engine on August 19, 2005 as they have with many of their prior engines. Since then the community have and are still updating the engine and make sure that it works for our modern computers.
 Keep in mind that you will still need pak0.pk3 from the original game.</description></item><item><title>Server Status</title><link>/server-status/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/server-status/</guid><description> Status
-online
+offline
 Map
 ra3map11
 Players
